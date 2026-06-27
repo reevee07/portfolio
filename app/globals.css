@@ -94,5 +94,5 @@ footer span{color:var(--t2)}
   .pipeline{margin-left:0;margin-top:12px}
   .edu-skills-row{grid-template-columns:1fr;gap:40px}
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-  .wheel-wrap{display:none}
+  .wheel-wrap{right:-160px;width:320px;height:320px;top:auto;bottom:-60px;transform:none}
 }
