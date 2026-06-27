@@ -182,7 +182,7 @@ export default function Home() {
          <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px',width:'100%'}}>
            <iframe src="https://platform.twitter.com/embed/Tweet.html?id=1961100354122305653&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
            <iframe src="https://platform.twitter.com/embed/Tweet.html?id=2053458368652779866&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
-           <iframe src="https://platform.twitter.com/embed/Tweet.html?id=2053465822757265495&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
+           <iframe src="https://platform.twitter.com/embed/Tweet.html?id=2053570955759571367&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
            <iframe src="https://platform.twitter.com/embed/Tweet.html?id=1975556591882789021&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
           </div>
         </div>
