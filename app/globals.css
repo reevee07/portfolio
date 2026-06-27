@@ -31,7 +31,7 @@ section{position:relative;z-index:1}
 .sec-label{font-family:var(--mono);font-size:11px;letter-spacing:3px;color:var(--t3);text-transform:uppercase;display:flex;align-items:center;gap:16px;margin-bottom:48px}
 .sec-label::before,.sec-label::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--b),transparent)}
 .projects{display:flex;flex-direction:column;gap:12px}
-.pcard{display:flex;align-items:center;gap:24px;background:var(--card);border:1px solid var(--b);bborder-radius:100px;padding:20px 28px;min-height:88px;text-decoration:none;color:inherit;transition:background .3s,border-color .3s,transform .3s,box-shadow .3s;position:relative;overflow:hidden}
+.pcard{display:flex;align-items:center;gap:24px;background:var(--card);border:1px solid var(--b);border-radius:100px;padding:20px 28px;min-height:88px;text-decoration:none;color:inherit;transition:background .3s,border-color .3s,transform .3s,box-shadow .3s;position:relative;overflow:hidden}
 .pcard::before{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,rgba(79,110,247,.06),rgba(139,92,246,.04));opacity:0;transition:opacity .3s}
 .pcard:hover{background:var(--card-h);border-color:var(--bg);transform:translateY(-2px);box-shadow:0 8px 40px rgba(79,110,247,.12)}
 .pcard:hover::before{opacity:1}

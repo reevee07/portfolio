@@ -26,7 +26,7 @@ const PROJECTS = [
   { name: 'Markhub',     url: 'https://markhub.app',     cat: 'Unified Bookmark Manager',              desc: 'All your saved links from different apps, one calm space.',                                             stage: 'idea' },
   { name: 'Dosetracker', url: 'https://dosetracker.app', cat: 'Smart Medication Reminder',              desc: 'Never miss a dose — smart reminders, share logs with your doctor.',                                    stage: 'live' },
   { name: 'StudyClash',  url: 'https://studyclash.app',  cat: 'Competitive Study Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live' },
-  { name: 'Li-bro',      url: '#',                       cat: 'Student Management App for Libraries',  desc: 'Students log study hours, compete with peers, and climb leaderboards — gamified library productivity.', stage: 'live' },
+  { name: 'Li-bro',      url: '#',                       cat: 'Student Management App for Libraries',  desc: 'Gamified study tracker for libraries — log hours, compete, climb leaderboards.', stage: 'live' },
 ]
 
 function Pipeline({ stage }: { stage: string }) {
