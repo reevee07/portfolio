@@ -86,7 +86,7 @@ footer span{color:var(--t2)}
 .wimg img{width:100%;height:100%;object-fit:cover;display:block}
 .wimg .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--t3);font-family:var(--mono);background:var(--bg2)}
 @media(max-width:768px){
- #hero{padding:80px 24px 40px;min-height:auto}
+ #hero{padding:100px 20px 60px;min-height:100vh}
   .wrap{padding:70px 20px}
   nav{padding:0 16px}
   .pcard{flex-wrap:wrap}
@@ -94,5 +94,5 @@ footer span{color:var(--t2)}
   .pipeline{margin-left:0;margin-top:12px}
   .edu-skills-row{grid-template-columns:1fr;gap:40px}
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-  .wheel-wrap{right:-160px;width:320px;height:320px;top:auto;bottom:-60px;transform:none}.wheel-wrap{position:relative;right:auto;top:auto;bottom:auto;transform:none;width:280px;height:280px;margin:32px auto 0;display:block}
+  .wheel-wrap{right:-160px;width:320px;height:320px;top:auto;bottom:-60px;transform:none}.wheel-wrap{position:absolute;right:-180px;top:50%;transform:translateY(-50%);width:360px;height:360px}
 }
