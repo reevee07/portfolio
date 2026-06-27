@@ -21,8 +21,8 @@ const WHEEL_CIRCLES = [
 ]
 
 const PROJECTS = [
-  { name: 'Labsuzz',     url: 'https://labsuzz.com',     cat: 'AI Marketplace of Diagnostic Labs',    desc: 'Compare, book, and manage diagnostic tests across 500+ certified labs.',                                  stage: 'mvp'  },
-  { name: 'ByeBill',     url: 'https://byebill.in',      cat: 'Revolutionary Billing for Restaurants', desc: 'Smart billing system and live coupons to boost sales value.',                                           stage: 'idea' },
+  { name: 'Labsbuzz',     url: 'https://labsuzz.com',     cat: 'AI Marketplace of Diagnostic Labs',    desc: 'Compare, book, and manage diagnostic tests across 500+ certified labs.',                                  stage: 'mvp'  },
+  { name: 'Byebill',     url: 'https://byebill.in',      cat: 'Revolutionary Billing for Restaurants', desc: 'Smart billing system and live coupons to boost sales value.',                                           stage: 'idea' },
   { name: 'Markhub',     url: 'https://markhub.app',     cat: 'Unified Bookmark Manager',              desc: 'All your saved links from different apps, one calm space.',                                             stage: 'idea' },
   { name: 'Dosetracker', url: 'https://dosetracker.app', cat: 'Smart Medication Reminder',              desc: 'Never miss a dose — smart reminders, share logs with your doctor.',                                    stage: 'live' },
   { name: 'StudyClash',  url: 'https://studyclash.app',  cat: 'Competitive Study Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live' },
