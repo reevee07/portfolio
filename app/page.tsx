@@ -156,7 +156,7 @@ export default function Home() {
               </div>
               <div className="sec-label" style={{marginTop:'32px'}}>Interests</div>
 <div className="skills-grid">
-  {INTERESTS.map(s => <div key={s.name} className="skill" style={{borderColor:'rgba(245,158,11,0.25)',background:'rgba(245,158,11,0.06)'}}><div className="slogo">{s.svg}</div>{s.name}</div>)}
+  {INTERESTS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
 </div>
 
             </div>
