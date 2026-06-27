@@ -56,6 +56,10 @@ const SKILLS = [
   { name: 'HTML',         svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#e34c26"/><path d="M7 4l1.8 20.4L16 27l7.2-2.6L25 4H7z" fill="#e34c26"/><path d="M16 25.4V6.4H23.4L22 21.4 16 23.2" fill="#f06529"/><path d="M16 14h-4.6l-.3-3.4H16V7.4H7.8l.8 9H16v-2.4zm0 6.4l-3.8-1-.3-3H9.2l.5 6 6.3 1.8V20.4z" fill="white"/><path d="M16 14v2.4h4.2l-.4 4.4-3.8 1v2.8l6.3-1.8.5-6.8H16V14z" fill="#ebebeb"/></svg> },
   { name: 'CSS',          svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#264de4"/><path d="M7 4l1.8 20.4L16 27l7.2-2.6L25 4H7z" fill="#264de4"/><path d="M16 25.4V6.4H23.4L22 21.4 16 23.2" fill="#2965f1"/><path d="M16 14h-4.2l-.3-3.4H16V7.4H8l.8 9H16v-2.4zm0 6.4l-3.7-1-.2-2.8H9.2l.5 5.8 6.3 1.8V20.4z" fill="white"/><path d="M16 14v2.4h3.9l-.4 4.4-3.5 1v2.8l6.3-1.8.5-6.8H16V14z" fill="#ebebeb"/></svg> },
   { name: 'Solidity',     svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#1C1C1C"/><polygon points="16,4 23,10.5 16,17 9,10.5" fill="#8C8C8C"/><polygon points="9,10.5 16,17 16,4" fill="#C4C4C4"/><polygon points="23,10.5 16,17 16,4" fill="#8C8C8C"/><polygon points="16,15 23,21.5 16,28 9,21.5" fill="#444"/><polygon points="9,21.5 16,28 16,15" fill="#5C5C5C"/><polygon points="23,21.5 16,28 16,15" fill="#444"/></svg> },
+  { name: 'Vercel',       svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#000"/><polygon points="16,8 28,24 4,24" fill="white"/></svg> },
+]
+
+const INTERESTS = [
   { name: 'Trading',      svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#0d2818"/><polyline points="4,24 10,16 15,20 21,10 27,13" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/><circle cx="27" cy="13" r="2" fill="#22c55e"/></svg> },
   { name: 'NFT Flipping', svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#1a0a2e"/><rect x="6" y="8" width="20" height="16" rx="3" fill="#9945ff" opacity=".3" stroke="#9945ff" strokeWidth="1.2"/><path d="M10 20l4-5 3 3 2-3 3 5" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/><circle cx="12" cy="14" r="1.5" fill="#f59e0b"/></svg> },
 ]
@@ -146,10 +150,15 @@ export default function Home() {
         <div className="wrap">
           <div className="edu-skills-row">
             <div className="edu-skills-col">
-              <div className="sec-label" id="skills">Skills</div>
+              <div className="sec-label" id="skills">Tech Stack</div>
               <div className="skills-grid">
                 {SKILLS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
               </div>
+              <div className="sec-label" style={{marginTop:'32px'}}>Interests</div>
+<div className="skills-grid">
+  {INTERESTS.map(s => <div key={s.name} className="skill" style={{borderColor:'rgba(245,158,11,0.25)',background:'rgba(245,158,11,0.06)'}}><div className="slogo">{s.svg}</div>{s.name}</div>)}
+</div>
+
             </div>
             <div className="edu-skills-col">
               <div className="sec-label">Education</div>
