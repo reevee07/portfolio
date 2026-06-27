@@ -168,11 +168,27 @@ export default function Home() {
                 {INTERESTS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
               </div>
               <div className="sec-label" style={{marginTop:'32px'}}>Real Talk</div>
-<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',width:'100%',overflow:'hidden'}}>
-  <div style={{minWidth:0,overflow:'hidden'}}><blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053458368652779866"></a></blockquote></div>
-  <div style={{minWidth:0,overflow:'hidden'}}><blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053570955759571367"></a></blockquote></div>
-  <div style={{minWidth:0,overflow:'hidden'}}><blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053465822757265495"></a></blockquote></div>
-  <div style={{minWidth:0,overflow:'hidden'}}><blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/1961100354122305653"></a></blockquote></div>
+<div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px',width:'100%'}}>
+  <div style={{minWidth:0,overflow:'hidden',height:'280px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
+    <div style={{transform:'scale(0.85)',transformOrigin:'top left',width:'118%',pointerEvents:'none'}}>
+      <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053458368652779866"></a></blockquote>
+    </div>
+  </div>
+  <div style={{minWidth:0,overflow:'hidden',height:'280px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
+    <div style={{transform:'scale(0.85)',transformOrigin:'top left',width:'118%',pointerEvents:'none'}}>
+      <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053570955759571367"></a></blockquote>
+    </div>
+  </div>
+  <div style={{minWidth:0,overflow:'hidden',height:'280px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
+    <div style={{transform:'scale(0.85)',transformOrigin:'top left',width:'118%',pointerEvents:'none'}}>
+      <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053465822757265495"></a></blockquote>
+    </div>
+  </div>
+  <div style={{minWidth:0,overflow:'hidden',height:'280px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
+    <div style={{transform:'scale(0.85)',transformOrigin:'top left',width:'118%',pointerEvents:'none'}}>
+      <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/1961100354122305653"></a></blockquote>
+    </div>
+  </div>
 </div>
 <Script async src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
                
