@@ -177,7 +177,7 @@ export default function Home() {
 
       {/* REAL TALK */}
       <section id="realtalk">
-        <div className="wrap">
+        <div style={{maxWidth:'1100px',margin:'0 auto',padding:'100px 32px'}}>
           <div className="sec-label">Real Talk</div>
           <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
               <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/1961100354122305653"></a></blockquote>
