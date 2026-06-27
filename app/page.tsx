@@ -179,18 +179,12 @@ export default function Home() {
       <section id="realtalk">
         <div style={{maxWidth:'1100px',margin:'0 auto',padding:'100px 32px'}}>
           <div className="sec-label">Real Talk</div>
-          <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
-              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/1961100354122305653"></a></blockquote>
-            </div>
-            <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
-              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053570955759571367"></a></blockquote>
-            </div>
-            <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
-              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053465822757265495"></a></blockquote>
-            </div>
-            <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
-              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053458368652779866"></a></blockquote>
-            </div>
+         <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px',width:'100%'}}>
+           <iframe src="https://platform.twitter.com/embed/Tweet.html?id=1961100354122305653&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
+           <iframe src="https://platform.twitter.com/embed/Tweet.html?id=2053570955759571367&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
+           <iframe src="https://platform.twitter.com/embed/Tweet.html?id=2053465822757265495&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
+           <iframe src="https://platform.twitter.com/embed/Tweet.html?id=2053458368652779866&theme=dark" style={{width:'100%',height:'320px',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'12px'}} frameBorder="0" scrolling="no" />
+          </div>
         </div>
       </section>
 
