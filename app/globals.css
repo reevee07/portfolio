@@ -17,10 +17,10 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
 nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:64px;background:rgba(7,8,16,.8);backdrop-filter:blur(20px) saturate(180%);border-bottom:1px solid var(--b)}
 .nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .nav-name{font-size:22px;font-weight:700;color:var(--t1);letter-spacing:-.8px;line-height:1.1}
-.social-pill{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.04);border:1px solid var(--b);border-radius:100px;padding:5px 8px}
-.social-pill a{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--t3);text-decoration:none;transition:color .2s,background .2s,transform .2s}
-.social-pill a:hover{color:var(--t1);background:rgba(255,255,255,.08);transform:translateY(-1px)}
-.social-pill svg{width:14px;height:14px}
+.social-pill{display:flex;align-items:center;gap:2px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:100px;padding:5px 8px}
+.social-pill a{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c8ceff;text-decoration:none;transition:color .2s,background .2s,transform .2s}
+.social-pill a:hover{color:#ffffff;background:rgba(255,255,255,.14);transform:translateY(-1px)}
+.social-pill svg{width:19px;height:19px}
 section{position:relative;z-index:1}
 .wrap{max-width:860px;margin:0 auto;padding:100px 32px}
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:120px 64px 80px;max-width:1100px;margin:0 auto;overflow:hidden}
