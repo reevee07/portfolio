@@ -1,6 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react'
 import { getGalleryImages } from '@/lib/supabase'
+import Image from 'next/image'
 
 const WHEEL_CIRCLES = [
   { w: 180, l: 45.1, t: 53.4 },
@@ -82,7 +83,7 @@ export default function Home() {
       <nav>
         <a href="#hero" className="nav-brand">
   <div style={{ width: 44, height: 44, borderRadius: '50%', overflow: 'hidden', border: '1.8px solid #4f6ef7' }}>
-    <img src="/profile.jpg" alt="Ravi Raj" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    <Image src="/profile.jpg" alt="Ravi Raj" width={44} height={44} style={{ objectFit: 'cover' }} />
   </div>
   <div style={{ display:'flex', alignItems:'center', gap:10 }}>
     <div className="nav-name">Ravi Raj</div>
