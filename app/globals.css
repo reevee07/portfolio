@@ -100,3 +100,4 @@ footer span{color:var(--t2)}
   .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
 .wheel-wrap{position:absolute;right:-180px;top:50%;transform:translateY(-50%);width:360px;height:360px}
 }
+

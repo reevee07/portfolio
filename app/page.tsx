@@ -81,21 +81,14 @@ export default function Home() {
       {/* NAV */}
       <nav>
         <a href="#hero" className="nav-brand">
-          <div style={{ width: 44, height: 44 }}>
-            <svg viewBox="0 0 44 44" fill="none" width="44" height="44">
-              <defs><linearGradient id="ng" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse"><stop offset="0%" stopColor="#4f6ef7"/><stop offset="100%" stopColor="#8b5cf6"/></linearGradient></defs>
-              <circle cx="22" cy="22" r="20" stroke="url(#ng)" strokeWidth="1.8" fill="rgba(79,110,247,0.08)"/>
-              <circle cx="22" cy="22" r="7" stroke="url(#ng)" strokeWidth="1.8" fill="rgba(139,92,246,0.15)"/>
-              <path d="M10 16Q22 8 34 16" stroke="url(#ng)" strokeWidth="1.5" fill="none"/>
-              <line x1="14" y1="28" x2="30" y2="40" stroke="url(#ng)" strokeWidth="1.5" strokeLinecap="round"/>
-              <line x1="30" y1="28" x2="14" y2="40" stroke="url(#ng)" strokeWidth="1.5" strokeLinecap="round"/>
-            </svg>
-          </div>
-          <div style={{ display:'flex', alignItems:'center', gap:10 }}>
-            <div className="nav-name">Ravi Raj</div>
-            <span style={{ fontFamily:'var(--mono)', fontSize:10, fontWeight:500, color:'var(--t2)', background:'rgba(255,255,255,.06)', border:'1px solid var(--b)', borderRadius:100, padding:'3px 12px', letterSpacing:'1.5px', textTransform:'uppercase' }}>Builder</span>
-          </div>
-        </a>
+  <div style={{ width: 44, height: 44, borderRadius: '50%', overflow: 'hidden', border: '1.8px solid #4f6ef7' }}>
+    <img src="/profile.jpg" alt="Ravi Raj" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+  </div>
+  <div style={{ display:'flex', alignItems:'center', gap:10 }}>
+    <div className="nav-name">Ravi Raj</div>
+    <span style={{ fontFamily:'var(--mono)', fontSize:10, fontWeight:500, color:'var(--t2)', background:'rgba(255,255,255,.06)', border:'1px solid var(--b)', borderRadius:100, padding:'3px 12px', letterSpacing:'1.5px', textTransform:'uppercase' }}>Builder</span>
+  </div>
+</a>
         {/* ═══ SOCIAL URLS — edit here ═══ */}
         <div className="social-pill">
           <a href="https://x.com/0xreevee" target="_blank" rel="noopener" title="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.743l7.73-8.835L1.254 2.25H8.08l4.26 5.638L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
