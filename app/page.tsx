@@ -181,13 +181,13 @@ export default function Home() {
           <div className="sec-label">Real Talk</div>
           <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'12px',width:'100%'}}>
             <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
-              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053458368652779866"></a></blockquote>
+              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053465822757265495"></a></blockquote>
             </div>
             <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
               <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053570955759571367"></a></blockquote>
             </div>
             <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
-              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053465822757265495"></a></blockquote>
+              <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/2053458368652779866"></a></blockquote>
             </div>
             <div style={{minWidth:0,overflow:'hidden',height:'320px',borderRadius:'12px',border:'1px solid rgba(255,255,255,0.08)'}}>
               <blockquote className="twitter-tweet" data-theme="dark" data-width="100%"><a href="https://x.com/i/status/1961100354122305653"></a></blockquote>
