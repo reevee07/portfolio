@@ -166,6 +166,35 @@ export default function Home() {
               <div className="skills-grid">
                 {INTERESTS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
               </div>
+              <div className="sec-label" style={{marginTop:'32px'}}>Real Talk</div>
+              <div style={{display:'grid',gridTemplateColumns:'1fr 1fr',gap:'10px'}}>
+                {[
+                  {url:'https://x.com/i/status/2053458368652779866',tag:'Trading',green:true},
+                  {url:'https://x.com/i/status/2053570955759571367',tag:'Trading',green:true},
+                  {url:'https://x.com/i/status/2053465822757265495',tag:'Trading',green:true},
+                  {url:'https://x.com/i/status/1961100354122305653',tag:'NFT Flipping',green:false},
+                ].map((t,i) => (
+                  <a key={i} href={t.url} target="_blank" rel="noopener"
+                    style={{display:'flex',flexDirection:'column',gap:'10px',background:'rgba(255,255,255,0.02)',border:'1px solid rgba(255,255,255,0.08)',borderRadius:'16px',padding:'14px',textDecoration:'none',transition:'border-color .2s'}}
+                    onMouseEnter={e=>(e.currentTarget.style.borderColor='rgba(79,110,247,0.3)')}
+                    onMouseLeave={e=>(e.currentTarget.style.borderColor='rgba(255,255,255,0.08)')}>
+                    <div style={{display:'flex',alignItems:'center',gap:'8px'}}>
+                      <div style={{width:30,height:30,borderRadius:'50%',background:'rgba(255,255,255,0.06)',border:'1px solid rgba(255,255,255,0.1)',display:'flex',alignItems:'center',justifyContent:'center',fontSize:10,fontWeight:700,color:'#f0f0ff',flexShrink:0}}>D</div>
+                      <div style={{flex:1}}><div style={{fontSize:12,fontWeight:600,color:'#f0f0ff'}}>Dhanyosmi ✓</div><div style={{fontSize:10,color:'#5a5a80'}}>@thedhanyosmi</div></div>
+                      <svg width="12" height="12" viewBox="0 0 24 24" fill="#5a5a80"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.743l7.73-8.835L1.254 2.25H8.08l4.26 5.638L18.244 2.25z"/></svg>
+                    </div>
+                    <div style={{fontSize:12,color:'#c8c8e8',lineHeight:1.6,flex:1}}>Not flexing — just documenting. First $250+ profit from a single trade. R:R was 1:30++. Thanks to <span style={{color:'#4f6ef7',fontWeight:500}}>@0xreevee</span> for being there 🤝</div>
+                    <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+                      <span style={{fontSize:10,color:'#5a5a80',fontFamily:'var(--mono)'}}>May 10 · 136 views</span>
+                      <div style={{display:'flex',gap:8}}><span style={{fontSize:10,color:'#5a5a80'}}>💬 3</span><span style={{fontSize:10,color:'#5a5a80'}}>❤️ 5</span></div>
+                    </div>
+                    <div style={{display:'flex',alignItems:'center',justifyContent:'space-between'}}>
+                      <span className={`edu-badge ${t.green ? 'badge-score' : 'badge-out'}`}>{t.tag}</span>
+                      <span style={{fontSize:10,color:'#4f6ef7',fontFamily:'var(--mono)'}}>view on X →</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>
