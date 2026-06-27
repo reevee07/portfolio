@@ -89,7 +89,7 @@ footer span{color:var(--t2)}
  #hero{padding:76px 20px 40px;min-height:100vh;justify-content:flex-start}
 .hero-title{font-size:28px;letter-spacing:-1px;margin-bottom:8px}
 .hero-sub{font-size:13px;max-width:52%;margin-bottom:0}
-.wheel-wrap{position:absolute;right:-180px;top:120px;transform:none;width:320px;height:320px;z-index:0}
+.wheel-wrap{position:absolute;right:-180px;top:320px;transform:none;width:320px;height:320px;z-index:0}
 .hero-title,.hero-sub{position:relative;z-index:1}
   .wrap{padding:70px 20px}
   nav{padding:0 16px}
