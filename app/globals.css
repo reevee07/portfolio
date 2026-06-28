@@ -244,44 +244,49 @@ footer span{color:var(--t2)}
 
 /* ── EDU CARDS: fix wrapping ── */
 .edu-card {
-  border-radius: 100px;
-  padding: 8px 10px;
-  gap: 6px;
+  border-radius: 16px;
+  padding: 14px 16px;
+  gap: 12px;
   flex-wrap: nowrap;
   align-items: center;
+  overflow: hidden;
 }
 
 .edu-icon {
-  width: 26px;
-  height: 26px;
-  font-size: 12px;
+  width: 36px;
+  height: 36px;
+  font-size: 18px;
   flex-shrink: 0;
 }
 
 .edu-info {
   flex: 1;
-  min-width: 0;            /* ← allows truncation */
+  min-width: 0;
 }
 
 .edu-name {
-  font-size: 10px;
-  white-space: nowrap;     /* ← stop name wrapping */
+  font-size: 13px;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .edu-meta {
-  font-size: 8px;
+  font-size: 11px;
+  color: var(--t3);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .edu-badge {
-  font-size: 8px;
-  padding: 2px 6px;
+  font-size: 10px;
+  padding: 4px 10px;
   flex-shrink: 0;
   white-space: nowrap;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* ── SKILLS: fit more per row ── */
