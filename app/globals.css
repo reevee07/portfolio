@@ -244,7 +244,7 @@ footer span{color:var(--t2)}
 
 /* ── EDU CARDS: fix wrapping ── */
 .edu-card {
-  border-radius: 16px;
+  border-radius: 100px;
   padding: 14px 16px;
   gap: 12px;
   flex-wrap: nowrap;
@@ -287,6 +287,9 @@ footer span{color:var(--t2)}
   max-width: 90px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.edu-list {
+  width: 100%;
 }
 
 /* ── SKILLS: fit more per row ── */
