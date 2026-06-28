@@ -226,17 +226,11 @@ footer span{color:var(--t2)}
     flex-shrink: 0;
   }
 
-  /* ── EDUCATION / SKILLS ROW ── */
+ /* ── EDUCATION / SKILLS ROW ── */
 .edu-skills-row {
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  align-items: start;
-}
-
-.edu-skills-col {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 40px;
 }
 
 /* ── SEC LABEL: stop wrapping ── */
