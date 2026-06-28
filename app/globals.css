@@ -329,6 +329,18 @@ footer span{color:var(--t2)}
   width: 133% !important;
   height: 133% !important;
 }
+.sec-label::before {
+  display: none;
+}
+
+.edu-card {
+  justify-content: space-between;
+}
+
+.edu-info {
+  flex: 1;
+}
+
   footer { padding-bottom: 100px; }
 }
 
