@@ -89,7 +89,7 @@ export default function Home() {
         <a href="#hero" className="nav-brand">
   <div
   style={{ width: 44, height: 44, borderRadius: '50%', overflow: 'hidden', border: '1.8px solid #4f6ef7', transition: 'transform 0.2s ease' }}
-  onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.2)')}
+  onMouseEnter={e => (e.currentTarget.style.transform = 'scale(2)')}
   onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
 >
   <Image src="/profile.jpg" alt="Ravi Raj" width={44} height={44} style={{ objectFit: 'cover' }} />
