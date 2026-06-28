@@ -85,19 +85,247 @@ footer span{color:var(--t2)}
 @keyframes counter-spin{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(-360deg)}}
 .wimg img{width:100%;height:100%;object-fit:cover;display:block}
 .wimg .ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--t3);font-family:var(--mono);background:var(--bg2)}
+
+.hide-mobile { display: block; }
+/* ============================================================
+   MOBILE FIXES — replace the existing @media(max-width:768px)
+   block in your globals.css with this entire block
+   ============================================================ */
+
 @media(max-width:768px){
- #hero{padding:76px 20px 40px;min-height:100vh;justify-content:flex-start}
-.hero-title{font-size:28px;letter-spacing:-1px;margin-bottom:8px}
-.hero-sub{font-size:13px;max-width:52%;margin-bottom:0}
-.wheel-wrap{position:absolute;right:-180px;top:320px;transform:none;width:320px;height:320px;z-index:0}
-.hero-title,.hero-sub{position:relative;z-index:1}
-  .wrap{padding:70px 20px}
-  nav{padding:0 16px}
-  .pcard{flex-wrap:wrap}
-  .pname{min-width:auto}
-  .pipeline{margin-left:0;margin-top:12px}
-  .edu-skills-row{grid-template-columns:1fr;gap:40px}
-  .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.wheel-wrap{position:absolute;right:-180px;top:50%;transform:translateY(-50%);width:360px;height:360px}
+
+  /* ── NAV ── */
+  nav { padding: 0 16px; }
+  .social-pill { display: none; }
+
+  /* ── BOTTOM DOCK ── */
+  .mobile-dock {
+    display: flex !important;
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    align-items: center;
+    gap: 2px;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 100px;
+    padding: 5px 8px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 8px 32px rgba(0,0,0,0.4);
+    backdrop-filter: blur(20px);
+  }
+  .mobile-dock a {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #e0e0ff; text-decoration: none;
+  }
+  .mobile-dock svg { width: 20px; height: 20px; }
+
+  /* ── HERO ── */
+  #hero {
+    padding: 88px 24px 32px;
+    min-height: unset;
+    justify-content: flex-start;
+    overflow: hidden;
+    position: relative;
+  }
+  .hero-title {
+    font-size: 38px;
+    letter-spacing: -1.5px;
+    margin-bottom: 16px;
+    line-height: 1.05;
+    z-index: 2;
+    position: relative;
+  }
+  .hero-sub {
+    font-size: 14px;
+    max-width: 260px;
+    line-height: 1.65;
+    z-index: 2;
+    position: relative;
+  }
+  .wheel-wrap { display: none; }
+
+  /* ── WRAP ── */
+  .wrap { padding: 40px 16px; }
+
+  /* ── PROJECT CARDS: true single-line pill ── */
+  .pcard {
+    flex-wrap: nowrap;
+    border-radius: 100px;
+    padding: 0 14px;
+    height: 64px;          /* fixed height = true pill */
+    min-height: unset;
+    gap: 8px;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .pname {
+    font-size: 13px;
+    min-width: 76px;
+    max-width: 76px;
+    letter-spacing: -0.3px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+  }
+
+  .pinfo {
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .pcat {
+    font-size: 9px;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .pdesc {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;        /* override the -webkit-box clamp */
+    -webkit-line-clamp: unset;
+  }
+
+  /* ── PIPELINE: dots only, no labels ── */
+  .hide-mobile { display: none; }
+
+  .pipeline {
+    margin-left: 0;
+    margin-top: 0;
+    flex-shrink: 0;
+    gap: 0;
+  }
+
+  .pstep { gap: 0; }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .pline {
+    width: 18px;
+    margin-bottom: 0;      /* remove the space labels used to occupy */
+  }
+
+  .parrow {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-left: 6px;
+    flex-shrink: 0;
+  }
+
+  /* ── EDUCATION / SKILLS ROW ── */
+.edu-skills-row {
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
 }
 
+.edu-skills-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* ── SEC LABEL: stop wrapping ── */
+.sec-label {
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+  white-space: nowrap;    /* ← stops TECH STACK breaking to 2 lines */
+  gap: 8px;
+}
+
+/* ── EDU CARDS: fix wrapping ── */
+.edu-card {
+  border-radius: 100px;
+  padding: 8px 10px;
+  gap: 6px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.edu-icon {
+  width: 26px;
+  height: 26px;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.edu-info {
+  flex: 1;
+  min-width: 0;            /* ← allows truncation */
+}
+
+.edu-name {
+  font-size: 10px;
+  white-space: nowrap;     /* ← stop name wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edu-meta {
+  font-size: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edu-badge {
+  font-size: 8px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* ── SKILLS: fit more per row ── */
+.skill {
+  font-size: 9px;
+  padding: 4px 7px 4px 4px;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.slogo {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+.slogo svg {
+  width: 15px;
+  height: 15px;
+}
+
+/* ── INTERESTS ── */
+.interests-row {
+  margin-top: 32px;
+}
+
+/* ── REAL TALK ── */
+#realtalk > div {
+  padding: 40px 12px !important;
+}
+
+#realtalk iframe {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133% !important;
+  height: 133% !important;
+}
+  footer { padding-bottom: 100px; }
+}
+
+.mobile-dock { display: none; }
