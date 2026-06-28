@@ -147,33 +147,36 @@ export default function Home() {
       </section>
 
      {/* EDUCATION + SKILLS */}
-      <section id="education">
-        <div className="wrap">
-          <div className="edu-skills-row">
-            <div className="edu-skills-col">
-              <div className="sec-label">Education</div>
-              <div className="edu-list">
-                <div className="edu-card fade-up"><div className="edu-icon">🏛️</div><div className="edu-info"><div className="edu-name">Chandigarh University</div><div className="edu-meta">B.Tech, CSE · 2021–2025</div></div><div className="edu-badge badge-out">Dropped Out</div></div>
-                <div className="edu-card fade-up"><div className="edu-icon">🏫</div><div className="edu-info"><div className="edu-name">Shiv Jyoti Sr. Sec. School</div><div className="edu-meta">12th · 2018–2020</div></div><div className="edu-badge badge-score">85.4%</div></div>
-                <div className="edu-card fade-up"><div className="edu-icon">🏫</div><div className="edu-info"><div className="edu-name">BD Public School</div><div className="edu-meta">10th · 2013–2018</div></div><div className="edu-badge badge-score">87.2%</div></div>
-              </div>
-            </div>
-            <div className="edu-skills-col">
-              <div className="sec-label" id="skills">Tech Stack</div>
-              <div className="skills-grid">
-                {SKILLS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
-              </div>
-              <div className="sec-label" style={{marginTop:'32px'}}>Interests</div>
-              <div className="skills-grid">
-                {INTERESTS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
-              </div>
-              
-<Script async src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
-               
-</div>
-          </div>
+<section id="education">
+  <div className="wrap">
+    <div className="edu-skills-row">
+      <div className="edu-skills-col">
+        <div className="sec-label">Education</div>
+        <div className="edu-list">
+          <div className="edu-card fade-up"><div className="edu-icon">🏛️</div><div className="edu-info"><div className="edu-name">Chandigarh University</div><div className="edu-meta">B.Tech, CSE · 2021–2025</div></div><div className="edu-badge badge-out">Dropped Out</div></div>
+          <div className="edu-card fade-up"><div className="edu-icon">🏫</div><div className="edu-info"><div className="edu-name">Shiv Jyoti Sr. Sec. School</div><div className="edu-meta">12th · 2018–2020</div></div><div className="edu-badge badge-score">85.4%</div></div>
+          <div className="edu-card fade-up"><div className="edu-icon">🏫</div><div className="edu-info"><div className="edu-name">BD Public School</div><div className="edu-meta">10th · 2013–2018</div></div><div className="edu-badge badge-score">87.2%</div></div>
         </div>
-      </section>
+      </div>
+      <div className="edu-skills-col">
+        <div className="sec-label" id="skills">Tech Stack</div>
+        <div className="skills-grid">
+          {SKILLS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
+        </div>
+      </div>
+    </div>
+
+    {/* INTERESTS — full width below both columns */}
+    <div style={{ marginTop: '48px' }}>
+      <div className="sec-label">Interests</div>
+      <div className="skills-grid">
+        {INTERESTS.map(s => <div key={s.name} className="skill"><div className="slogo">{s.svg}</div>{s.name}</div>)}
+      </div>
+    </div>
+
+    <Script async src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
+  </div>
+</section>
 
       {/* REAL TALK */}
       <section id="realtalk">
