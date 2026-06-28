@@ -290,6 +290,8 @@ footer span{color:var(--t2)}
 }
 .edu-list {
   width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
 }
 
 /* ── SKILLS: fit more per row ── */
