@@ -126,7 +126,7 @@ export default function Home() {
           </div>
           <h1 className="hero-title">
             <span className="word-plain">GOD</span> <span className="word-plain">is</span><br />
-            <span className="word-accent">ultimate</span> <span className="word-accent">builder</span>
+            <span className="word-plain">ultimate</span> <span className="word-plain">builder</span>
           </h1>
           <p className="hero-sub">Turning raw ideas into products that matter — at the intersection of AI, health, and human possibility.</p>
         </div>
