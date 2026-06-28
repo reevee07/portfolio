@@ -87,9 +87,13 @@ export default function Home() {
       {/* NAV */}
       <nav>
         <a href="#hero" className="nav-brand">
-  <div style={{ width: 44, height: 44, borderRadius: '50%', overflow: 'hidden', border: '1.8px solid #4f6ef7' }}>
-    <Image src="/profile.jpg" alt="Ravi Raj" width={44} height={44} style={{ objectFit: 'cover' }} />
-  </div>
+  <div
+  style={{ width: 44, height: 44, borderRadius: '50%', overflow: 'hidden', border: '1.8px solid #4f6ef7', transition: 'transform 0.2s ease' }}
+  onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.2)')}
+  onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
+>
+  <Image src="/profile.jpg" alt="Ravi Raj" width={44} height={44} style={{ objectFit: 'cover' }} />
+</div>
   <div style={{ display:'flex', alignItems:'center', gap:10 }}>
     <div className="nav-name">Ravi Raj</div>
     <span style={{ fontFamily:'var(--mono)', fontSize:10, fontWeight:500, color:'var(--t2)', background:'rgba(255,255,255,.06)', border:'1px solid var(--b)', borderRadius:100, padding:'3px 12px', letterSpacing:'1.5px', textTransform:'uppercase' }}>Builder</span>
