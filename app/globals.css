@@ -290,30 +290,23 @@ footer span{color:var(--t2)}
   white-space: nowrap;
 }
 
-/* ── SKILLS GRID: 2 per row ── */
-.skills-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 6px;
-}
-
+/* ── SKILLS: fit more per row ── */
 .skill {
   font-size: 9px;
   padding: 4px 7px 4px 4px;
   gap: 4px;
   white-space: nowrap;
-  width: 100%;
 }
 
 .slogo {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
   flex-shrink: 0;
 }
 
 .slogo svg {
-  width: 14px;
-  height: 14px;
+  width: 15px;
+  height: 15px;
 }
 
 /* ── INTERESTS ── */
