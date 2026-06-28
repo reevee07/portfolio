@@ -112,8 +112,7 @@ export default function Home() {
       {/* HERO */}
       <section id="hero">
         <div style={{ position: 'relative' }}>
-          <div className="pdeco pdeco1" />
-          <div className="pdeco pdeco2" />
+               
           <div className="wheel-wrap">
             <div className="wheel">
               <div className="wheel-ring" />
