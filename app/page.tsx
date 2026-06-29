@@ -186,7 +186,7 @@ export default function Home() {
 <section id="realtalk">
   <div style={{maxWidth:'1100px', margin:'0 auto', padding:'24px 32px'}}>
     <div className="sec-label">Real Talk</div>
-    <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'8px', width:'100%'}}>
+    <div className="tweets-grid" style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'8px', width:'100%'}}>
       {[
         '1961100354122305653',
         '2053458368652779866',

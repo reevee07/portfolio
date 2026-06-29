@@ -148,7 +148,7 @@ footer span{color:var(--t2)}
   .wheel-wrap { display: none; }
 
   /* ── WRAP ── */
-  .wrap { padding: 40px 16px; }
+  .wrap { padding: 12px 16px; }
 
   /* ── PROJECT CARDS: true single-line pill ── */
   .pcard {
@@ -230,14 +230,18 @@ footer span{color:var(--t2)}
 .edu-skills-row {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 16px;
+}
+
+#education .wrap > div:last-of-type {
+  margin-top: 16px !important;
 }
 
 /* ── SEC LABEL: stop wrapping ── */
 .sec-label {
   font-size: 9px;
   letter-spacing: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 08px;
   white-space: nowrap;    /* ← stops TECH STACK breaking to 2 lines */
   gap: 8px;
 }
@@ -290,10 +294,18 @@ footer span{color:var(--t2)}
 }
 .edu-list {
   width: 100%;
-  max-width: 340px;
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 0;
 }
 
+.edu-skills-col {
+  width: 100%;
+}
+
+.edu-card {
+  width: 100% !important;
+  max-width: 100% !important;
+}
 /* ── SKILLS: fit more per row ── */
 .skill {
   font-size: 9px;
@@ -320,18 +332,29 @@ footer span{color:var(--t2)}
 
 /* ── REAL TALK ── */
 #realtalk > div {
-  padding: 40px 12px !important;
+  padding: 24px 12px !important;
+}
+
+#realtalk .tweets-grid {
+  grid-template-columns: 1fr !important;
+}
+
+#realtalk .tweet-card {
+  height: 420px !important;
+  overflow: hidden !important;
 }
 
 #realtalk iframe {
-  transform: scale(0.75);
-  transform-origin: top left;
-  width: 133% !important;
-  height: 133% !important;
+  width: 100% !important;
+  height: 600px !important;
+  transform: none !important;
+  overflow: hidden !important;
 }
-.sec-label::before {
-  display: none;
+
+#realtalk .tweet-card {
+  overflow: hidden !important;
 }
+
 
 .edu-card {
   justify-content: space-between;
