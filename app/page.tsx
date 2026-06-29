@@ -184,7 +184,7 @@ export default function Home() {
 
       {/* REAL TALK */}
 <section id="realtalk">
-  <div style={{maxWidth:'1100px', margin:'0 auto', padding:'100px 32px'}}>
+  <div style={{maxWidth:'1100px', margin:'0 auto', padding:'24px 32px'}}>
     <div className="sec-label">Real Talk</div>
     <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'8px', width:'100%'}}>
       {[
@@ -194,8 +194,8 @@ export default function Home() {
         '1975556591882789021'
       ].map(id => (
         <div key={id} style={{
-          height: '240px',
-          overflow: 'hidden',
+          height: '360px',
+          overflow: 'auto',
           borderRadius: '12px',
           border: '1px solid rgba(255,255,255,0.08)',
           background: 'rgba(255,255,255,0.02)'
