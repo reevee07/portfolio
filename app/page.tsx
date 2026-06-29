@@ -63,6 +63,7 @@ const SKILLS = [
 const INTERESTS = [
   { name: 'Trading',      svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#0d2818"/><polyline points="4,24 10,16 15,20 21,10 27,13" stroke="#22c55e" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none"/><circle cx="27" cy="13" r="2" fill="#22c55e"/></svg> },
   { name: 'NFT Flipping', svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#1a0a2e"/><rect x="6" y="8" width="20" height="16" rx="3" fill="#9945ff" opacity=".3" stroke="#9945ff" strokeWidth="1.2"/><path d="M10 20l4-5 3 3 2-3 3 5" stroke="#f59e0b" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/><circle cx="12" cy="14" r="1.5" fill="#f59e0b"/></svg> },
+  { name: 'Web3',         svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#0a1628"/><polygon points="16,6 26,12 26,20 16,26 6,20 6,12" fill="none" stroke="#6366f1" strokeWidth="1.5"/><polygon points="16,11 21,14 21,18 16,21 11,18 11,14" fill="#6366f1" opacity=".3" stroke="#6366f1" strokeWidth="1"/><circle cx="16" cy="16" r="2" fill="#818cf8"/></svg> },
 ]
 
 export default function Home() {
