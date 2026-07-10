@@ -26,7 +26,7 @@ const PROJECTS = [
   { name: 'Byebill',     url: 'https://byebill.in',      cat: 'Revolutionary Billing for Restaurants', desc: 'Smart billing system and live coupons to boost sales value.',                                           stage: 'mvp' },
   { name: 'Markhub',     url: 'https://markhub.app',     cat: 'Unified Bookmark Manager',              desc: 'All your saved links from different apps, one calm space.',                                             stage: 'mvp' },
   { name: 'Porthub', url: '', cat: 'Portfolio-hub',              desc: ' letting devs showcase their work and get found via skill/location search and community ratings',                                    stage: 'mvp' },
-  { name: 'Focusclub',  url: 'https://study-logbook.vercel.app/',  cat: 'Competitive Study Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live' },
+  { name: 'Focusclub',  url: 'https://study-logbook.vercel.app/',  cat: 'Focus Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live' },
   { name: 'Li-bro',      url: '#',                       cat: 'Student Management App for Libraries',  desc: 'Gamified study tracker for libraries — log hours, compete, climb leaderboards.', stage: 'mvp' },
 ]
 
