@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: 'Ravi Raj — Builder',
   description: 'Turning raw ideas into products that matter.',
   icons: {
-    icon: '/profile.png',
+    icon: '/profile.jpg',
   },
 }
 
