@@ -25,7 +25,7 @@ const PROJECTS = [
   { name: 'Labsbuzz',     url: 'https://labsbuzz.com',     cat: 'AI Marketplace of Diagnostic Labs',    desc: 'Compare, book, and manage diagnostic tests across 500+ certified labs.',                                  stage: 'live'  },
   { name: 'Focusclub',  url: 'https://study-logbook.vercel.app/',  cat: 'Focus Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live' },
   { name: 'Markhub',     url: 'https://markhub.app',     cat: 'Unified Bookmark Manager',              desc: 'All your saved links from different apps, one calm space.',                                             stage: 'mvp' },
-  { name: 'Porthub', url: '', cat: 'Portfolio-hub',              desc: ' letting devs showcase their work and get found via skill/location search and community ratings',                                    stage: 'mvp' },
+  { name: 'Porthub', url: '', cat: 'Portfolio-hub',              desc: ' letting devs showcase their work and get found via skill/location search and ratings',                                    stage: 'mvp' },
   { name: 'Byebill',     url: 'https://byebill.in',      cat: 'Revolutionary Billing for Restaurants', desc: 'Smart billing system and live coupons to boost sales value.',                                           stage: 'mvp'  },
   { name: 'Li-bro',      url: '#',                       cat: 'Student Management App for Libraries',  desc: 'Gamified study tracker for libraries — log hours, compete, climb leaderboards.', stage: 'mvp' },
 ]
