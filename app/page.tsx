@@ -22,12 +22,12 @@ const WHEEL_CIRCLES = [
 ]
 
 const PROJECTS = [
-  { name: 'Labsbuzz',     url: 'https://labsbuzz.com',     cat: 'AI Marketplace of Diagnostic Labs',    desc: 'Compare, book, and manage diagnostic tests across 500+ certified labs.',                                  stage: 'live'  },
-  { name: 'Focusclub',  url: 'https://study-logbook.vercel.app/',  cat: 'Focus Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live' },
-  { name: 'Markhub',     url: 'https://markhub.app',     cat: 'Unified Bookmark Manager',              desc: 'All your saved links from different apps, one calm space.',                                             stage: 'mvp' },
-  { name: 'Porthub', url: '', cat: 'Portfolio-hub',              desc: ' letting devs showcase their work and get found via skill/location search and ratings',                                    stage: 'mvp' },
-  { name: 'Byebill',     url: 'https://byebill.in',      cat: 'Revolutionary Billing for Restaurants', desc: 'Smart billing system and live coupons to boost sales value.',                                           stage: 'mvp'  },
-  { name: 'Li-bro',      url: '#',                       cat: 'Student Management App for Libraries',  desc: 'Gamified study tracker for libraries — log hours, compete, climb leaderboards.', stage: 'mvp' },
+  { name: 'Labsbuzz',     url: 'https://labsbuzz.com',     cat: 'AI Marketplace for Labs',    desc: 'Compare and book test/scan across certified labs.',                                  stage: 'live', icon: '/logos/labsbuzz.png'  },
+  { name: 'Focusclub',  url: 'https://study-logbook.vercel.app/',  cat: 'Focus Tracker',              desc: 'Challenge friends, log sessions, climb leaderboards.',                                                  stage: 'live', icon: '/logos/focusclub.png' },
+  { name: 'Byebill',     url: 'https://byebill.in',      cat: 'Revolutionary Billing System ', desc: 'Smart billing system and live coupons to boost sales value.',                                           stage: 'mvp', icon: '/logos/byebill.png'  },
+  { name: 'Markhub',     url: 'https://markhub.app',     cat: 'Unified Bookmark Manager',              desc: 'All your saved links from different apps, one calm space.',                                             stage: 'mvp', icon: '/logos/markhub.png' },
+  { name: 'Porthub', url: '', cat: 'Portfolio-hub',              desc: ' letting devs showcase their work and track og skills',                                    stage: 'mvp', icon: '/logos/porthub.png' },
+  { name: 'Li-bro',      url: '#',                       cat: ' Innovative Library Solution',  desc: 'Gamified study tracker for libraries.', stage: 'mvp', icon: '/logos/libro.png' },
 ]
 
 function Pipeline({ stage }: { stage: string }) {
@@ -43,12 +43,6 @@ function Pipeline({ stage }: { stage: string }) {
     </div>
   )
 }
-
-const Arrow = () => (
-  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-    <path d="M2.5 9.5L9.5 2.5M9.5 2.5H4M9.5 2.5V8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
-)
 
 const SKILLS = [
   { name: 'React JS',     svg: <svg viewBox="0 0 32 32" fill="none"><rect width="32" height="32" rx="8" fill="#20232a"/><g transform="translate(4,4) scale(.75)"><circle cx="16" cy="16" r="2.8" fill="#61dafb"/><ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#61dafb" strokeWidth="1.5" fill="none"/><ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#61dafb" strokeWidth="1.5" fill="none" transform="rotate(60 16 16)"/><ellipse cx="16" cy="16" rx="14" ry="5.5" stroke="#61dafb" strokeWidth="1.5" fill="none" transform="rotate(120 16 16)"/></g></svg> },
@@ -140,10 +134,10 @@ export default function Home() {
           <div className="projects">
             {PROJECTS.map(p => (
               <a key={p.name} href={p.url} target="_blank" rel="noopener" className="pcard fade-up">
+                <div className="picon"><Image src={p.icon} alt={`${p.name} logo`} width={48} height={48} /></div>
                 <div className="pname">{p.name}</div>
                 <div className="pinfo"><div className="pcat">{p.cat}</div><div className="pdesc">{p.desc}</div></div>
                 <Pipeline stage={p.stage} />
-                <div className="parrow"><Arrow /></div>
               </a>
             ))}
           </div>
